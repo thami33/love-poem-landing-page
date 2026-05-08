@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whispers of the Heart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Georgia', serif; }
+        .poem-container {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(15px);
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .heart-pulse {
+            animation: pulse 2s ease-in-out infinite;
+            display: inline-block;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(0.9); }
+            50% { transform: scale(1.1); }
+        }
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .fade-in-up:nth-child(2) { animation-delay: 0.2s; }
+        .fade-in-up:nth-child(3) { animation-delay: 0.4s; }
+        .fade-in-up:nth-child(4) { animation-delay: 0.6s; }
+        .fade-in-up:nth-child(5) { animation-delay: 0.8s; }
+        .fade-in-up:nth-child(6) { animation-delay: 1.0s; }
+        .fade-in-up:nth-child(7) { animation-delay: 1.2s; }
+        .fade-in-up:nth-child(8) { animation-delay: 1.4s; }
+        .fade-in-up:nth-child(9) { animation-delay: 1.6s; }
+        .fade-in-up:nth-child(10) { animation-delay: 1.8s; }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-50 to-rose-50 flex items-center justify-center p-4">
+    <div class="poem-container w-full max-w-xl p-8">
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold gradient-text mb-6">
+                Whispers of the Heart
+            </h1>
+            <div class="flex justify-center space-x-4">
+                <div class="w-5 h-5 bg-rose-500 heart-pulse rounded-full"></div>
+                <div class="w-5 h-5 bg-rose-400 heart-pulse rounded-full"></div>
+                <div class="w-5 h-5 bg-rose-300 heart-pulse rounded-full"></div>
+            </div>
+        </div>
+        
+        <div class="space-y-6 text-center text-gray-800">
+            <p class="text-xl font-medium fade-in-up">
+                In the quiet moments between breaths,
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                I find you — my forever, my now.
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                Your laughter is the melody that dances
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                through the chambers of my soul.
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                With you, time becomes a gentle tide,
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                pulling us closer with each passing moment.
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                Your eyes hold constellations I could get lost in
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                for eternity and still crave more.
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                You are the calm in my storms,
+            </p>
+            <p class="text-xl font-medium fade-in-up">
+                the warmth in my winters,
+            </p>
+            <p class="text-2xl font-bold text-rose-600 mt-8 fade-in-up">
+                Always and forever,
+            </p>
+            <p class="text-2xl font-bold text-rose-600 fade-in-up">
+                yours completely.
+            </p>
+        </div>
+        
+        <div class="mt-12 text-center">
+            <p class="text-sm text-gray-500 fade-in-up">
+                Created with love ❤️
+            </p>
+        </div>
+    </div>
+</body>
+</html>
